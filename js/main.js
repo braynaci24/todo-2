@@ -1,6 +1,5 @@
 $(document).ready(function () {
     let outGoingName = []
-
     function getRandomInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
@@ -26,7 +25,7 @@ $(document).ready(function () {
             })
         }
     })
-    
+
     $('.start').click(function () {
         let mission = $('.todo-info-input').val();
         if (mission.length > 3) {
@@ -38,7 +37,11 @@ $(document).ready(function () {
                 title: 'Kime ne kitliyorsun onu yaz :)',
             })
         }
-
+        $('.send-button').hide();
+        $('.refresh-button').show();
+    })
+    $('.refresh-button').click(function(){
+        window.location.reload()
     })
 
 })
