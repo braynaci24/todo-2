@@ -10,7 +10,7 @@ $(document).ready(function () {
     $('.send-button').click(function () {
         let nameInfo = $('.todo-name-input').val();
 
-        if (nameInfo.length > 0  ) {
+        if (nameInfo.length > 0) {
             outGoingName.push(nameInfo)
             $('.name-list').append(`<li class="element">${nameInfo}</li>`)
             $('.todo-name-input').val("").focus();
@@ -19,17 +19,26 @@ $(document).ready(function () {
                 $('.start').fadeIn(1000);
             }
 
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Önce kişileri ve ne yapılacağını gir',
+            })
         }
     })
+    
     $('.start').click(function () {
         let mission = $('.todo-info-input').val();
-        if(mission.length > 3){
+        if (mission.length > 3) {
             $('.paragraph').append(`<p class="mission-paragraph">${mission} görevi ${outGoingName[getRandomInt(0, outGoingName.length)]} kişisine kitlendi.</p>`)
             $(this).fadeOut(500);
-        }else {
-            alert("Kime ne kitliyosun onu yaz")
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Kime ne kitliyorsun onu yaz :)',
+            })
         }
-       
+
     })
 
 })
