@@ -35,7 +35,9 @@ $(document).ready(function () {
         let mission = $('.todo-info-input').val();
         let RandomName = outGoingName[getRandomInt(0, outGoingName.length)];
         if (mission.length > 3) {
-            $('.paragraph-container').append(`<p class="mission-paragraph">${mission} görevi ${RandomName} kişisine kitlendi.</p>`)
+            $('.paragraph-container').append(`<p class="mission-paragraph">${mission} görevi ${RandomName} kişisine çıktı.</p>`)
+            $('.trash').hide();
+            $('.list-element-general-box').addClass('none-through');
             $(this).hide();
         } else {
             Swal.fire({
