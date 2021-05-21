@@ -78,12 +78,6 @@ body {
     font-size: 20px;
     font-weight: 700;
 }
-.line-through {
-    text-decoration:line-through;
-}
-.none-through {
-    text-decoration: none;
-}
 .draw-name {
     font-size: 15px;
     color: black;
