@@ -15,4 +15,3 @@ git clone https://github.com/braynaci24/todo-2
 # Usage 
 
 Yapılacak işi girip yeterli sayıda isim yazar ve çekilişi başlatırsanız şanşsız kişiyi belirlersiniz.
->>>>>>> c61e844e034b549db060ab11fdd46c8db2714e32
