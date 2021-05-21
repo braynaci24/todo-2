@@ -6,11 +6,6 @@ $(document).ready(function () {
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min) + min);
     }
-
-    function reload() {
-        window.location.reload()
-    }
-    
     $('.send-button').click(function () {
         let nameListContainer = $('.name-list')
         let nameInfo = $('.todo-name-input').val();
@@ -35,9 +30,8 @@ $(document).ready(function () {
         let mission = $('.todo-info-input').val();
         let RandomName = outGoingName[getRandomInt(0, outGoingName.length)];
         if (mission.length > 3) {
-            $('.paragraph-container').append(`<p class="mission-paragraph">${mission} görevi ${RandomName} kişisine çıktı.</p>`)
+            $('.paragraph-container').append(`<p class="mission-paragraph">${mission} görevi <span class="draw-name" >${RandomName}</span> kişisine çıktı.</p>`)
             $('.trash').hide();
-            $('.list-element-general-box').addClass('none-through');
             $(this).hide();
         } else {
             Swal.fire({
@@ -50,19 +44,16 @@ $(document).ready(function () {
     })
 
     $('.refresh-button').click(function () {
-        reload();
+        window.location.reload()
     })
 
     $('body').on('click', '.trash', function () {
         $(this).parent().parent().remove();
         if ($('.list-element-general-box').length < 1) {
             $('.start').remove();
-            reload();
+            window.location.reload()
         }
     })
 
-    $('body').on('click', '.list-element', function () {
-        $(this).parent().addClass('line-through')
-    })
-
+   
 })
