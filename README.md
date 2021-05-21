@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 ## README 
-=======
+
 
 # TO-DO LIST DRAW  🧾🧾🧾
 
