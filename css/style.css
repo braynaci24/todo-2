@@ -85,7 +85,14 @@ body {
     text-decoration: none;
 }
 .draw-name {
+    font-size: 15px;
     color: black;
+}
+.fa-exclamation {
+    margin-left: 5px;
+}
+.alert {
+    width: 365px;
 }
 .card-container {
     display: flex;

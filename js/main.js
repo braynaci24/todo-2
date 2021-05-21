@@ -30,7 +30,7 @@ $(document).ready(function () {
         let mission = $('.todo-info-input').val();
         let RandomName = outGoingName[getRandomInt(0, outGoingName.length)];
         if (mission.length > 3) {
-            $('.paragraph-container').append(`<div class="alert alert-danger" role="alert">${mission} GÖREVİ <span class="draw-name">${RandomName.toUpperCase()}</span> KİŞİSİNE ÇIKTI </div>`)
+            $('.paragraph-container').append(`<div class="alert alert-primary alert" role="alert">${mission} GÖREVİ  <span class="alert-link draw-name"> ${RandomName.toUpperCase()}</span> KİŞİSİNE ÇIKTI <i class="fas fa-exclamation"></i></div>`)
             $('.trash').hide();
             $(this).hide();
         } else {
