@@ -42,7 +42,7 @@ $(document).ready(function () {
         } else {
             Swal.fire({
                 icon: 'error',
-                title: 'Kime ne kitliyorsun onu yaz :)',
+                title: 'YAPILACAK İŞ NE ONU YAZ ',
             })
         }
         $('.send-button').hide();
