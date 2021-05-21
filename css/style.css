@@ -1,3 +1,6 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .page-info {
     width: 300px;
     height: 30px;
@@ -8,7 +11,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 200px;
 }
 .button-and-input-container {
     display: flex;
@@ -27,13 +29,20 @@
 .mission-paragraph {
     margin-top: 20px;
     font-size: 20px;
+    font-weight: 700;
 }
 .refresh-button {
-    margin: 10px;
+    margin: 5px;
     display: none;
 }
-.element {
-    font-size: 25px;
+.list-element {
+    padding: 10px;
+    list-style: none;
+}
+.trash {
+    padding-right: 8px;
+    text-decoration: none;
+    color: red;
 }
 .form-control:focus {
     color: #212529;
@@ -41,4 +50,27 @@
     border-color: rgb(182, 179, 179);
     outline: 0;
     box-shadow: none;
+}
+.general {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+.name-list {
+    padding: 0px;
+    margin: 0px;
+}
+.list-element-general-box {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+    background-color: #111;
+    color: white;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 4px;
+}
+.line-through {
+    text-decoration:line-through
 }

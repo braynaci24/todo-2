@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="sweetalert2/sweetalert2.min.css">
@@ -17,25 +19,22 @@
 </head>
 
 <body>
-   
-    <div class="container-fluid ">
+
+    <div class="container-fluid general">
         <div class="row">
             <div class="col main">
-                
-                <input type="email" class="form-control page-info  todo-info-input" id="exampleInputEmail1"
-                    aria-describedby="emailHelp" placeholder="Hangi iş yapılacak ? ">
-                    <input type="email" class="form-control page-info  todo-name-input" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Lütfen bir isim giriniz">
-                        <button type="button" class="btn btn-dark refresh-button">Yeniden başlat</button>
-                    <button type="button" class="btn btn-dark send-button">EKLE</button>
+                <input type="text" class="form-control page-info  todo-info-input" placeholder="Hangi iş yapılacak ? "/>
+                <input type="text" class="form-control page-info  todo-name-input"
+                    placeholder="Lütfen bir isim giriniz"/>
+                <button type="button" class="btn btn-dark refresh-button">Yeniden başlat</button>
+                <button type="button" class="btn btn-dark send-button">EKLE</button>
                 <div>
-                    <ol class="name-list">
-                    </ol>
+                    <ul class="name-list">
+                    </ul>
                 </div>
                 <button type="button" class="btn btn-dark btn-lg btn-block start">ÇEKİLİŞİ BAŞLAT</button>
-                <div class="paragraph">
-                <!-- p class="mission-paragraph"></p> -->
-
+                <div class="paragraph-container">
+                    
                 </div>
             </div>
         </div>
