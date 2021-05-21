@@ -88,8 +88,10 @@ body {
     font-size: 15px;
     color: black;
 }
-.fa-exclamation {
-    margin-left: 5px;
+.fa-exclamation-circle{
+    margin-right: 5px;
+    color: rgb(187, 7, 7);
+    font-size: 20px;
 }
 .alert {
     width: 365px;
