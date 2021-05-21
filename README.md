@@ -11,4 +11,4 @@
 ```
 # Usage 
 
-Yapılacak işi girip yeterli sayıda isim yazar ve çekilişi başlatırsanız şanşsız kişiyi bulursunuz.
+Yapılacak işi girip yeterli sayıda isim yazar ve çekilişi başlatırsanız şanşsız kişiyi belirlersiniz.
