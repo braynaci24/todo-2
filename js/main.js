@@ -36,7 +36,7 @@ $(document).ready(function () {
         } else {
             Swal.fire({
                 icon: 'error',
-                title: 'YAPILACAK İŞİ GİRİNİZ LÜTFEN ',
+                title: 'LÜTFEN YAPILACAK İŞİ GİRİNİZ ',
             })
         }
         $('.send-button').hide();
