@@ -8,7 +8,6 @@ $(document).ready(function () {
 
     $('.send-button').click(function () {
         let nameInfo = $('.todo-name-input').val();
-
         if (nameInfo.length > 0) {
             outGoingName.push(nameInfo)
             $('.name-list').append(`<li class="element">${nameInfo}</li>`)
