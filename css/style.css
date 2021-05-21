@@ -2,6 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .page-info-input{
+    width: 100%;
+    height: 50px;
     margin-bottom: 10px;
 }
 .main {
@@ -83,7 +85,7 @@ body {
     text-decoration: none;
 }
 .draw-name {
-    color: yellow;
+    color: black;
 }
 .card-container {
     display: flex;
