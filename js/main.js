@@ -9,9 +9,9 @@ $(document).ready(function () {
     $('.send-button').click(function () {
         let nameListContainer = $('.name-list')
         let nameInfo = $('.todo-name-input').val();
-        if (nameInfo.length > 0 ) {
+        if (nameInfo.length > 0) {
             outGoingName.push(nameInfo)
-            $('.name-list').append(`<div class="list-element-general-box"><li class="list-element">${nameInfo}</li><a href="#"><i class="far fa-trash-alt trash"></i></a></div>`)
+            $('.name-list').append(`<li class="list-element list-element-general-box"> ${nameInfo} <a href="#"><i class="far fa-trash-alt trash"></i></a></li>`)
             $('.todo-name-input').val("").focus();
 
             if (outGoingName.length > 1) {
@@ -36,7 +36,7 @@ $(document).ready(function () {
         } else {
             Swal.fire({
                 icon: 'error',
-                title: 'YAPILACAK İŞ NE ONU YAZ ',
+                title: 'YAPILACAK İŞİ GİRİNİZ LÜTFEN ',
             })
         }
         $('.send-button').hide();
@@ -55,5 +55,5 @@ $(document).ready(function () {
         }
     })
 
-   
+
 })
