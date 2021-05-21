@@ -10,7 +10,7 @@
 
 # Installation
 ```bash
-[git clone](https://github.com/braynaci24/todo-2)
+git clone https://github.com/braynaci24/todo-2
 ```
 # Usage 
 
